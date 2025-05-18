@@ -210,7 +210,7 @@ def construct_workforce() -> OwlGaiaWorkforce:
 def evaluate_on_gaia():
     
     LEVEL = 1
-    on="valid"
+    on="test"
     SAVE_RESULT = True
     MAX_TRIES = 1
     
@@ -221,7 +221,7 @@ def evaluate_on_gaia():
         shutil.rmtree(f"tmp/")
     
     benchmark = GAIABenchmark(
-        data_dir="data/gaia",
+        data_dir="E:\\information\\project_teacher_zhang\\Fin-agent\\test\\owl\\data\\gaia",
         save_to=SAVE_RESULT_PATH,
     )
     
